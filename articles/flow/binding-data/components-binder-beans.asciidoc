@@ -64,6 +64,8 @@ public class MyForm extends VerticalLayout {
 
 * This binds the `firstName` text field to the "firstName" property in the item,
 `lastName` text field to the “lastName” property, and the `gender` combo box to the “gender” property.
+* If you want to bind properties of referenced classes like e.g. `address.city`,
+you need to call `binder.bindInstanceFields(this,true);
 
 Without this method, it would be necessary to bind each field separately.
 
